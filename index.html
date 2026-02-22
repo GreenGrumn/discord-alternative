@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Donut Builds | Reliable Discord Builders</title>
+
+  <title>Donut Builds</title>
+  <link rel="icon" type="image/png" href="logo.png">
 
   <style>
     :root {
@@ -27,8 +29,8 @@
       color: var(--text);
       min-height: 100vh;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       padding: 2rem;
     }
 
@@ -46,13 +48,6 @@
       box-shadow: 0 20px 50px rgba(0,0,0,0.4);
     }
 
-    .logo {
-      width: 90px;
-      height: 90px;
-      margin-bottom: 1rem;
-      filter: drop-shadow(0 0 15px rgba(88, 255, 120, 0.45));
-    }
-
     .badge {
       display: inline-block;
       background: rgba(255,159,28,0.15);
@@ -64,9 +59,19 @@
       margin-bottom: 1rem;
     }
 
-    h1 {
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
       font-size: clamp(2.2rem, 5vw, 3.2rem);
       margin-bottom: 1rem;
+    }
+
+    .title-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 10px rgba(88, 255, 120, 0.45));
     }
 
     .subtitle {
@@ -134,11 +139,12 @@
 <body>
   <main class="container">
     <section class="hero">
-      <img src="logo.webp" alt="Donut Builds Logo" class="logo" />
-
       <div class="badge">Trusted Builder Community</div>
 
-      <h1>Donut Builds</h1>
+      <h1 class="title">
+        <img src="logo.png" alt="Donut Builds Logo" class="title-logo">
+        Donut Builds
+      </h1>
 
       <p class="subtitle">
         Cheap, reliable building services — all organized in one Discord server.
